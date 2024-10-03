@@ -55,6 +55,9 @@ const Search = () => {
           <p>no meals found </p>
         )}
       </div>
+      <div>
+        
+      </div>
     </div>
   );
 };
