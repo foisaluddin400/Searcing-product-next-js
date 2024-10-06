@@ -38,8 +38,8 @@ const Search = () => {
       <div>
         {meals && meals.length > 0 ? (
           <div className="grid grid-cols-4">
-            {meals.map((meal) => (
-              <div className="m-2 ">
+            {meals.map((meal,index) => (
+              <div key={index} className="m-2 ">
                 <Image src={meal.strMealThumb} width={300} height={100} className="w-full h-auto"></Image>
                 <div className="bg-white p-2">
                   <h1>{meal.strMeal}</h1>
