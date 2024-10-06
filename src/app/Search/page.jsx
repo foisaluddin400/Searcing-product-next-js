@@ -37,7 +37,7 @@ const Search = () => {
       </div>
       <div>
         {meals && meals.length > 0 ? (
-          <div className="grid grid-cols-4">
+          <div className="grid md:grid-cols-4">
             {meals.map((meal,index) => (
               <div key={index} className="m-2 ">
                 <Image src={meal.strMealThumb} width={300} height={100} className="w-full h-auto"></Image>
